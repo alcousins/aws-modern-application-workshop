@@ -794,7 +794,7 @@ As with the monolith, you'll be using [Fargate](https://aws.amazon.com/fargate/)
         flaskResponse.headers["Content-Type"] = "application/json"
         return flaskResponse
     ```
-    Once you find that line, you can delete it or comment it out.
+    delete or comment out the above code block..
 
     *Tip: if you're not familiar with Python, you can comment out a line by adding a hash character, "#", at the beginning of the line.*
 
