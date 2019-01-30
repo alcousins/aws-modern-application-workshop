@@ -815,7 +815,9 @@ As with the monolith, you'll be using [Fargate](https://aws.amazon.com/fargate/)
 10. Now make one last Task Definition for the monolith to refer to this new container image URI (this process should be familiar now, and you can probably see that it makes sense to leave this drudgery to a CI/CD service in production), update the monolith service to use the new Task Definition, and make sure the app still functions as before.
 
 ### Checkpoint:
-Congratulations, you've successfully rolled out the like microservice from the monolith.  If you have time, try repeating this lab to break out the adoption microservice.  Otherwise, please remember to follow the steps below in the **Workshop Cleanup** to make sure all assets created during the workshop are removed so you do not see unexpected charges after today.
+Congratulations, you've successfully rolled out the like microservice from the monolith.  If you have time, try repeating this lab to break out the adoption microservice. If you choose to take on this task, you will need to create a new Python application containing the code required to fulfil the "/mysfits/<mysfit_id>/adopt" URL, build this into a docker container and then follow the same process to create a Task and Service corresponding to this function. 
+
+Otherwise, please remember to follow the steps below in the **Workshop Cleanup** to make sure all assets created during the workshop are removed so you do not see unexpected charges after today.
 
 ## Workshop Cleanup
 
