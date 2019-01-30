@@ -46,7 +46,6 @@ Resources:
     Type: AWS::S3::Bucket
     Condition: MakeBucket
     Properties:
-      AccessControl: PublicRead
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: error.html
